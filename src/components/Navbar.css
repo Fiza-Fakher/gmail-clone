@@ -1,0 +1,169 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(246, 248, 252);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #F6F8Fc;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-icon:hover {
+    background-color: rgb(110, 100, 100);
+    border-radius: 50%;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar p {
+    font-family: 'Open Sans', serif;
+    font-size: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(68, 71, 70);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    background-color: #EAF1FB;
+    border-radius: 20px;
+    /* margin-right: 120px; */
+}
+
+.search-bar {
+    border-radius: 20px;
+    padding: 10px 40px;
+    width: 600px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #888;
+    background-color:#fff;
+    color: #000;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #888;
+    pointer-events: none;
+}
+
+.icon-2 {
+    position: absolute;
+    right: 10px;
+    color: #888;
+    pointer-events: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#icons {
+    display: flex;
+    gap: 20px;
+    color: #5F6368;
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* Navbar.css */
+/* Existing styles */
+
+.profile-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    width: 150px; /* Adjust width as needed */
+}
+
+.profile-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-menu button:hover {
+    background-color: #f0f0f0;
+}

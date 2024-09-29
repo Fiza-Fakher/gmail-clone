@@ -1,0 +1,28 @@
+.box{
+    background-color: #fff;
+    margin-top: 5px;
+  }
+  .box-1 {
+    display: flex;
+    gap: 5px;
+    margin-top: 30px;
+    /* margin-left: 200px; */
+  }
+  
+  .icon-2 {
+    margin-left: 10px;
+  }
+  
+  .box-2 {
+    /* margin-left: 200px; */
+    margin-top: 40px;
+    display: flex;
+    gap: 160px; 
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
